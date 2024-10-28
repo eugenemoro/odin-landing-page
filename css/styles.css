@@ -13,6 +13,7 @@
   --top-secondary-text-color: #E5E7EB;
   --top-secondary-text-size: 18px;
   --btn-color: #3882F6;
+  --btn-border-color: #F9FAF8;
   --info-text-color: #1F2937;
   --info-header-text-size: 36px;
   --info-header-text-weight: 900;
@@ -26,6 +27,14 @@
   --signature-text-weight: 900;
   --signature-text-color: #1F2937;
   --signature-text-style: normal;
+  --bottom-text-color: var(--top-main-text-color);
+  --bottom-text-main-size: 18px;
+  --bottom-text-secondary-size: 12px;
+  --bottom-text-main-weight: bold;
+  --bottom-text-secondary-weight: normal;
+  --footer-bg-color: var(--top-bg-color);
+  --footer-text-color: var(--top-secondary-text-color);
+  --footer-text-size: 12px;
 }
 
 .container {
@@ -82,6 +91,7 @@
   display: block;
   height: auto;
   width: 100%;
+  max-width: 800px;
 }
 
 button {
@@ -147,6 +157,7 @@ button {
   font-style: var(--quote-text-style);
   color: var(--quote-text-color);
   padding-top: 24px; 
+  padding-bottom: 24px;
 }
 
 .signature {
@@ -155,5 +166,48 @@ button {
   font-weight: var(--signature-text-weight);
   color: var(--signature-text-color);
   font-style: var(--signature-text-style);
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 56px;
+  max-width: 1024px;
+  background-color: var(--btn-color);
+  color: var(--bottom-text-color);
+  border-radius: 10px;
+  padding: 56px 120px;
+}
+
+.bottom-container button {
+  border: 2px solid var(--btn-border-color);
+}
+
+.bottom-text-title {
+  font-size: var(--bottom-text-main-size);
+  font-weight: var(--bottom-text-secondary-weight);
+}
+
+.bottom-text-content {
+  font-size: var(--bottom-text-secondary-size);
+  font-weight: var(--bottom-text-secondary-weight);
+}
+
+.footer {
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  font-size: var(--footer-text-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
   padding-bottom: 24px;
 }
