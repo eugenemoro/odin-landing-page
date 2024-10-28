@@ -20,7 +20,12 @@
   --quote-bg-color: #E5E7EB;
   --quote-text-color: #1F2937;
   --quote-text-size: 36px;
-  --quote-text-style: light italic;
+  --quote-text-style: italic;
+  --quote-text-weight: lighter;
+  --signature-text-size: 18px;
+  --signature-text-weight: 900;
+  --signature-text-color: #1F2937;
+  --signature-text-style: normal;
 }
 
 .container {
@@ -125,4 +130,30 @@ button {
   color: var(--info-text-color);
   font-size: var(--info-img-text-size);
   max-width: 160px;
+}
+
+.mid-quote {
+  background-color: var(--quote-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote {
+  max-width: 800px;
+  font-size: var(--quote-text-size);
+  font-weight: var(--quote-text-weight);
+  font-style: var(--quote-text-style);
+  color: var(--quote-text-color);
+  padding-top: 24px; 
+}
+
+.signature {
+  text-align: right;
+  font-size: var(--signature-text-size);
+  font-weight: var(--signature-text-weight);
+  color: var(--signature-text-color);
+  font-style: var(--signature-text-style);
+  padding-bottom: 24px;
 }
